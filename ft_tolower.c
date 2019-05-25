@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 10:30:09 by samkhize          #+#    #+#             */
-/*   Updated: 2019/05/24 11:17:16 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/05/24 16:22:19 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,25 @@ void	ft_putchar(char c)
 /*The += are used to increment the values with the value specified after = symbol.
 */
 
+/* This is another way to do it wihout the else statement
+
 int		ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;
 	return (c);
 }
+
+*/
+
+int		ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (c -32)
+	else
+		return (c);
+}
+
 
 /* The main is used to test  */
 
