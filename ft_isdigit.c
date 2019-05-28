@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:37:56 by samkhize          #+#    #+#             */
-/*   Updated: 2019/05/27 17:35:51 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/05/28 11:28:47 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,46 @@ int		ft_isdigit.c(int c)
 		return (1);
 	return (0);
 }
+
+
+/* This is the test main that must be converted into my own functions
+ *
+ * #include <stdio.h>
+ * #include <ctype.h>
+ *
+ * int	main()
+ * {
+ *		char c;
+ *		c = '5';
+ *		printf("Result when numberic character is passed: %d, isdigit(c));
+ *
+ *		c = '+';
+ *		printf("\nResult when non-numeric character is passed: %d, isdigit(c));
+ *
+ *		return (0);
+ *	}
+ *
+ *		_______________
+ *
+ *		Example of C program to chech whether a character entered by user is numberic
+ *		character of NOT
+ *
+ *	#include <stdio.h>
+ *	#include <ctype.h>
+ *
+ *	int	main()
+ *	{
+ *		char c;
+ *
+ *		printf("Enter a character: ");
+ *		scanf("%c", &c);
+ *
+ *		if (isdigit(c) == 0)
+ *			printf("%c is not a digit.", c);
+ *		else
+ *			printf("%c is a digit.",c);
+ *		return (0);
+ * }
+ *
+ *
+ * */
