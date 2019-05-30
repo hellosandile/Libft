@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:41:51 by samkhize          #+#    #+#             */
-/*   Updated: 2019/05/28 14:32:19 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/05/30 09:31:17 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,3 +55,27 @@ int		ft_atoi(const char *str)
 
 	return ((int)(nbr * sign));
 }
+
+/* The following exampple shows the usage of atoi() function.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int	main ()
+{
+	int val;
+	char str[20];
+
+	strcpy(str, "98993489");
+	val = atoi(str);
+	prinft("String value = %s. Int value = %d\n", str, val);
+
+	strcpy(str, "tutorialspoint.com");
+	val = atoi(str);
+	printf("String value = %s, Int value = %d\n", str, val);
+
+	return (0);
+}
+
+*/
