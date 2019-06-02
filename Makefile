@@ -11,4 +11,6 @@
 # **************************************************************************** #
 
 
-Sort our strlcat, strncat, strnstrm bzero
+strnstro
+
+Also sort out my Makefile and .h file as well tomorrow
