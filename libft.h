@@ -6,8 +6,17 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 14:15:18 by samkhize          #+#    #+#             */
-/*   Updated: 2019/05/19 14:15:21 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/03 13:03:16 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef	FT_HEADER_H
+# define FT_HEADER_H
 
+#include <string.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+
+
+#endif
