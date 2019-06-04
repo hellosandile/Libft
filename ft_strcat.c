@@ -1,32 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/01 13:49:50 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/04 14:14:03 by samkhize         ###   ########.fr       */
+/*   Created: 2019/06/04 14:09:52 by samkhize          #+#    #+#             */
+/*   Updated: 2019/06/04 14:47:42 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-size_t		ft_strlcat(char *dst, const char *src, size_t size)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	size_t j;
-	size_t k;
+	int	i;
+	int	j;
 
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
 	j = 0;
-	k = 0;
-	while (dst[j] && j < size)
-		j++;
-	while ((src[k]) && ((j + k + 1) < size))
+	while (s2[j] != '\0')
 	{
-		dst[j + k] = src[k];
-		k++;
+		s1[i + j] = s2[j];
+		j++;
 	}
-	if (j != size)
-		dst[j + k] = '\0';
-	return (j + ft_strlen(src));
+	s1[i + j] = '\0';
+	return (s1);
+}
+
+int main ()
+{
+	char surname[]= "Mkhize";
+	char name[25]="Sandile";
+
+	ft_strcat(name, surname);
+	//printf("%s\n", surname);
+	printf("%s\n", name, surname);
+
+	return 0;
 }

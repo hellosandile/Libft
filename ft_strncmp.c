@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 09:56:47 by samkhize          #+#    #+#             */
-/*   Updated: 2019/05/30 10:38:59 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/04 15:38:44 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-
-/* Check the else if statements and change the print
- * function
 
 #include <sdtio.h>
 #include <string.h>
