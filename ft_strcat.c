@@ -6,12 +6,11 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 14:09:52 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/04 14:47:42 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/05 12:24:01 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 char	*ft_strcat(char *s1, const char *s2)
 {
@@ -29,16 +28,4 @@ char	*ft_strcat(char *s1, const char *s2)
 	}
 	s1[i + j] = '\0';
 	return (s1);
-}
-
-int main ()
-{
-	char surname[]= "Mkhize";
-	char name[25]="Sandile";
-
-	ft_strcat(name, surname);
-	//printf("%s\n", surname);
-	printf("%s\n", name, surname);
-
-	return 0;
 }

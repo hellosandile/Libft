@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:41:51 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/03 14:58:41 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/05 12:12:40 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int		ft_atoi(const char *str)
 
 	i = 0;
 	nbr = 0;
-	sign = 1:
+	sign = 1;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
 			str[i] =='\r' || str[i] == '\v' || str[i] == '\f')
 		i++;
