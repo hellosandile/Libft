@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 14:15:18 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/05 12:03:05 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/07 10:57:36 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,11 @@ char	*ft_strrchr(const char *s, int c);
 char		*ft_strstr(const char *haystack, const char *needle);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void    ft_putnbr(int n);
+void    *ft_memalloc(size_t size);
+void    ft_memdel(void **ap);
+char    *ft_strnew(size_t size);
+void    ft_strdel(char **as);
+void    ft_strclr(char *s);
 
 #endif
