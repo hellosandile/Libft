@@ -6,11 +6,13 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 11:28:16 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/07 11:38:40 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/07 11:54:15 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_memdel(void **ap)
 {
 	free(*ap);
 	*ap = NULL;
