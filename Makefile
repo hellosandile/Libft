@@ -6,7 +6,7 @@
 #    By: samkhize <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/19 14:13:56 by samkhize          #+#    #+#              #
-#    Updated: 2019/06/10 13:36:24 by samkhize         ###   ########.fr        #
+#    Updated: 2019/06/10 16:08:21 by samkhize         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,6 +54,7 @@ SRC		= ft_atoi.c \
 		  ft_striteri.c \
 		  ft_strmap.c \
 		  ft_strmapi.c \
+		  ft_strsub.c \
 		  
 
 OBJECTS		= $(SRC:.c=.o)
