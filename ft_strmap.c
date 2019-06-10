@@ -1,23 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 14:57:12 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/10 13:29:53 by samkhize         ###   ########.fr       */
+/*   Created: 2019/06/10 11:39:57 by samkhize          #+#    #+#             */
+/*   Updated: 2019/06/10 12:55:13 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strcmp(const char *s1, const char *s2)
+char	*ft_strmap(char const *s, char (*f)(char))
 {
-	unsigned int	i;
+	unsigned int i;
+	char	*str;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+	if (s == '\0' || f == '\0')
+		return NULL;
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
+	if (str == NULL)
+		return NULL;
+	while (s[i] != '\0')
+	{
+		str[i] = f(s[i]);
 		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	}
+	str[i] = '\0';
+	return (str);
 }
