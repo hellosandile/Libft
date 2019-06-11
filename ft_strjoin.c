@@ -1,35 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/01 13:54:11 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/11 16:33:04 by samkhize         ###   ########.fr       */
+/*   Created: 2019/06/11 09:33:51 by samkhize          #+#    #+#             */
+/*   Updated: 2019/06/11 10:44:47 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
-	size_t	j;
+	int i;
+	int j;
+	char *str;
 
 	i = 0;
-	if (!(needle[0]) || needle == haystack)
-		return ((char *)haystack);
-	while (i < len && haystack[i] != '\0')
+	j = 0;
+	if (s1 == NULL || s2 == NULL)
+		return NULL;
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (str == NULL)
+		return (NULL);
+	while (s1[i] != '\0')
 	{
-		j = 0;
-		while (i + j < len && haystack[i + j] == needle[j] && needle[j])
-			j++;
-		if (needle[j] == '\0')
-			return ((char *)haystack + i);
+		str[i] = s1[i];
 		i++;
 	}
-	if (haystack[i] == needle[i])
-		return((char *)haystack + i);
-	return (NULL);
+	while (s2[j] != '\0')
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
+	return (str);
 }
