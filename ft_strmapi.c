@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 13:07:22 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/10 13:18:07 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/12 14:49:50 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	str = ft_strnew(ft_strlen(s));
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{

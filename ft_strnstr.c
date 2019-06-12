@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 13:54:11 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/11 16:33:04 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/12 14:08:07 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		i++;
 	}
 	if (haystack[i] == needle[i])
-		return((char *)haystack + i);
+		return ((char *)haystack + i);
 	return (NULL);
 }
