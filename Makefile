@@ -57,6 +57,11 @@ SRC		= ft_atoi.c \
 		  ft_strsub.c \
 		  ft_strjoin.c \
 		  ft_strtrim.c \
+		  ft_putendl.c \
+		  ft_putchar_fd.c \
+		  ft_putstr_fd.c \
+		  ft_putendl_fd.c \
+		  ft_putnbr_fd.c \
 		  
 
 OBJECTS		= $(SRC:.c=.o)
@@ -68,7 +73,7 @@ FLAGS		= -Wall -Werror -Wextra
 all		: $(NAME)
 
 $(NAME)	: $(SRC) libft.h
-		gcc $(FLAGS) -I$(INCLUDES) -c $(SRC)
+		gcc $(FLAGS) -I $(INCLUDES) -c $(SRC)
 		ar rc $(NAME) $(OBJECTS)
 		ranlib $(NAME)
 
