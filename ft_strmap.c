@@ -18,7 +18,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char			*str;
 
 	i = 0;
-	if (s == '\0' || f == '\0')
+	if (!s || !f)
 		return (NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
 	if (str == NULL)

@@ -6,7 +6,7 @@
 #    By: samkhize <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/19 14:13:56 by samkhize          #+#    #+#              #
-#    Updated: 2019/06/18 11:13:57 by samkhize         ###   ########.fr        #
+#    Updated: 2019/06/18 14:24:58 by samkhize         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,13 +58,13 @@ SRC		= ft_atoi.c \
 		  ft_strsub.c \
 		  ft_strjoin.c \
 		  ft_strtrim.c \
+		  ft_putendl.c \
 		  ft_putchar_fd.c \
 		  ft_putstr_fd.c \
 		  ft_putendl_fd.c \
 		  ft_putnbr_fd.c \
 		  ft_strequ.c \
-		  ft_strnequ.c \
-		  
+		  ft_strnequ.c
 
 OBJECTS		= $(SRC:.c=.o)
 
@@ -75,7 +75,7 @@ FLAGS		= -Wall -Werror -Wextra
 all		: $(NAME)
 
 $(NAME)	: $(SRC) libft.h
-		gcc $(FLAGS) -I$(INCLUDES) -c $(SRC)
+		gcc $(FLAGS) -I $(INCLUDES) -c $(SRC)
 		ar rc $(NAME) $(OBJECTS)
 		ranlib $(NAME)
 
@@ -89,4 +89,4 @@ gclean	:
 		rm -f $(NAME)
 		rm -f $(OBJECTS)
 	
-re: fclean all
+re:	 fclean all
