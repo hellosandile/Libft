@@ -6,7 +6,7 @@
 #    By: samkhize <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/19 14:13:56 by samkhize          #+#    #+#              #
-#    Updated: 2019/06/11 16:23:29 by samkhize         ###   ########.fr        #
+#    Updated: 2019/06/18 11:13:57 by samkhize         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC		= ft_atoi.c \
 		  ft_memset.c \
 		  ft_putchar.c \
 		  ft_putstr.c \
+		  ft_putendl.c \
 		  ft_strcat.c \
 		  ft_strchr.c \
 		  ft_strcmp.c \
@@ -57,6 +58,12 @@ SRC		= ft_atoi.c \
 		  ft_strsub.c \
 		  ft_strjoin.c \
 		  ft_strtrim.c \
+		  ft_putchar_fd.c \
+		  ft_putstr_fd.c \
+		  ft_putendl_fd.c \
+		  ft_putnbr_fd.c \
+		  ft_strequ.c \
+		  ft_strnequ.c \
 		  
 
 OBJECTS		= $(SRC:.c=.o)
