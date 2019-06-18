@@ -6,7 +6,7 @@
 #    By: samkhize <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/19 14:13:56 by samkhize          #+#    #+#              #
-#    Updated: 2019/06/18 14:24:58 by samkhize         ###   ########.fr        #
+#    Updated: 2019/06/18 14:49:47 by samkhize         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,8 @@ SRC		= ft_atoi.c \
 		  ft_putendl_fd.c \
 		  ft_putnbr_fd.c \
 		  ft_strequ.c \
-		  ft_strnequ.c
+		  ft_strnequ.c \
+		  ft_strsplit.c \
 
 OBJECTS		= $(SRC:.c=.o)
 
