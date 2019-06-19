@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 14:15:18 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/18 15:09:07 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/19 14:21:21 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,6 @@ void	ft_putnbr_fd(int n, int fd);
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	**ft_strsplit(char const *s, char c);
-
+char		*ft_itoa(int n);
 
 #endif
