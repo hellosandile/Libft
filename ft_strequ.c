@@ -6,7 +6,7 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 10:58:03 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/21 13:53:21 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/22 05:06:11 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,28 @@ int		ft_strequ(char const *s1, char const *s2)
 	}
 	return (0);
 }
-*/
+
 
 {
 	if (s1 == NULL || s2 == NULL)
 		return (0);
 	if (ft_strcmp(s1, s2) == 0)
+		return (1);
+	return (0);
+}
+*/
+
+{
+	size_t	cnt;
+
+	cnt = 0;
+	if (s1 == s2)
+		return (1);
+	if (!s1 || !s2)
+		return (0);
+	while (s1[cnt] && s1[cnt] == s2[cnt])
+		cnt++;
+	if (s1[cnt] == s2[cnt])
 		return (1);
 	return (0);
 }
