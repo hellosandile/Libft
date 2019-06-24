@@ -6,16 +6,16 @@
 /*   By: samkhize <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 12:50:00 by samkhize          #+#    #+#             */
-/*   Updated: 2019/06/19 13:51:21 by samkhize         ###   ########.fr       */
+/*   Updated: 2019/06/24 13:30:34 by samkhize         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_countword(char const *s, char c)
+static int	ft_countword(char const *s, char c)
 {
-	unsigned int i;
-	int counter;
+	unsigned int	i;
+	int				counter;
 
 	i = 0;
 	counter = 0;
@@ -33,19 +33,17 @@ static int		ft_countword(char const *s, char c)
 	return (counter);
 }
 
-
-static char		*ft_strndup(char const *s, size_t n)
+static char	*ft_strndup(char const *s, size_t n)
 {
 	char	*str;
 
-	str = (char *)malloc(sizeof(char) * n + 1);;
+	str = (char *)malloc(sizeof(char) * n + 1);
 	str = ft_strncpy(str, s, n);
 	str[n] = '\0';
 	return (str);
 }
 
-
-char	**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
@@ -55,9 +53,7 @@ char	**ft_strsplit(char const *s, char c)
 	i = 0;
 	k = 0;
 	tab = (char **)malloc(sizeof(char *) * (ft_countword(s, c)) + 1);
-	if (!tab)
-		return (NULL);
-	if (!s || !c)
+	if (!tab || !s || !c)
 		return (NULL);
 	while (s[i])
 	{
